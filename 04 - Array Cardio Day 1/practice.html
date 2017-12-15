@@ -40,6 +40,17 @@
     const born = inventors.filter(inventor => (inventor.year >=1500 && inventor.year < 1600))
     console.table(born);
 
+    //1a. Filter the list of inventors for those who passed in the 1900's
+    //ES5
+    // const died = inventors.filter(function(inventor) {
+    //   return inventor.passed >= 1900 && inventor.passed < 2000;
+    // });
+    // console.table(died);
+
+    //ES6
+    const died = inventors.filter(inventor => (inventor.passed >= 1900 && inventor.passed < 2000))
+    console.table(died);
+
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
 
